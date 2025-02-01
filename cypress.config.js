@@ -1,14 +1,11 @@
 const { defineConfig } = require("cypress");
-const createEsbuildPlugin = require("@badeball/cypress-cucumber-preprocessor/esbuild").createEsbuildPlugin;
-const addCucumberPreprocessorPlugin = require("@badeball/cypress-cucumber-preprocessor").addCucumberPreprocessorPlugin;
 
 module.exports = defineConfig({
   e2e: {
-    async setupNodeEvents(on, config) {
-      await addCucumberPreprocessorPlugin(on, config);
-      on("file:preprocessor", createEsbuildPlugin(config));
-      return config;
+    setupNodeEvents(on, config) {
+      return require("./cypress/plugins/index.js")(on, config);
     },
-    specPattern: "cypress/e2e/**/*.feature",
+    excludeSpecPattern: "*.js",
+    specPattern: "cypress/e2e/**/*.{feature,features}",
   },
 });

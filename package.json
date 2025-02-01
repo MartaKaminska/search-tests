@@ -4,15 +4,30 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "cypress open",
-    "ci": "cypress run",
+    "start": "npx cypress open",
+    "ci": "npx cypress run",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
+  "cypress-cucumber-preprocessor": {
+    "nonGlobalStepDefinitions": false,
+    "stepDefinitions": "cypress/e2e/step_definitions/",
+    "cucumberJson": {
+      "generate": true,
+      "outputFolder": "cypress/cucumber-json",
+      "filePrefix": "",
+      "fileSuffix": ".cucumber"
+    }
+  },
   "devDependencies": {
     "@badeball/cypress-cucumber-preprocessor": "^22.0.0",
+    "@cucumber/cucumber": "^11.2.0",
     "cypress": "^14.0.1"
+  },
+  "dependencies": {
+    "commander": "^13.1.0",
+    "cypress-cucumber-preprocessor": "^4.3.1"
   }
 }

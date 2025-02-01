@@ -1,0 +1,159 @@
+[
+  {
+    "description": "    Verification of search results for the Google browse according to the given phrase",
+    "keyword": "Feature",
+    "name": "Search in Google browse",
+    "line": 1,
+    "id": "search-in-google-browse",
+    "tags": [],
+    "uri": "google.feature",
+    "elements": [
+      {
+        "id": "search-in-google-browse;search-for-\"phrase\"-without-applying-a-date-filter",
+        "keyword": "Scenario",
+        "line": 17,
+        "name": "Search for \"phrase\" without applying a date filter",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to \"www.google.com\"",
+            "result": {
+              "status": "passed",
+              "duration": 2543000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "reject cookie policy",
+            "result": {
+              "status": "passed",
+              "duration": 212000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 9,
+            "name": "type prowly into the search bar",
+            "result": {
+              "status": "passed",
+              "duration": 565000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 10,
+            "name": "press Enter",
+            "result": {
+              "status": "failed",
+              "duration": 1480000000,
+              "error_message": "SyntaxError: The following error originated from your application code, not from Cypress.\n\n  > Unexpected token ','\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\nSyntaxError: The following error originated from your application code, not from Cypress.\n\n  > Unexpected token ','\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://www.google.com/__cypress/runner/cypress_runner.js:3456:19)\n    at Promise._then (https://www.google.com/__cypress/runner/cypress_runner.js:1209:17)\n    at Promise._passThrough (https://www.google.com/__cypress/runner/cypress_runner.js:4080:17)\n    at Promise.lastly.Promise.finally (https://www.google.com/__cypress/runner/cypress_runner.js:4089:17)\n    at Object.onRunnableRun (https://www.google.com/__cypress/runner/cypress_runner.js:162647:53)\n    at $Cypress.action (https://www.google.com/__cypress/runner/cypress_runner.js:41540:28)\n    at Runnable.run (https://www.google.com/__cypress/runner/cypress_runner.js:145229:13)\n    at next (https://www.google.com/__cypress/runner/cypress_runner.js:155014:10)\n    at https://www.google.com/__cypress/runner/cypress_runner.js:155058:5\n    at timeslice (https://www.google.com/__cypress/runner/cypress_runner.js:145569:27)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 11,
+            "name": "there should be some results of search that are relevant to prowly",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 12,
+            "name": "there should be prowly result in the sponsored category",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 13,
+            "name": "there should be information with the address Antoniego Józefa Madalińskiego 71/1, 02-549 Warszawa in the side panel",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "search-in-google-browse;search-for-\"phrase\"-with-a-date-filter-\"past-24-hours\"",
+        "keyword": "Scenario",
+        "line": 27,
+        "name": "Search for \"phrase\" with a date filter \"Past 24 hours\"",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "I navigate to \"www.google.com\"",
+            "result": {
+              "status": "passed",
+              "duration": 1489000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "reject cookie policy",
+            "result": {
+              "status": "passed",
+              "duration": 198000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 20,
+            "name": "type prowly into the search bar",
+            "result": {
+              "status": "passed",
+              "duration": 374000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 21,
+            "name": "press Enter",
+            "result": {
+              "status": "failed",
+              "error_message": "SyntaxError: The following error originated from your application code, not from Cypress.\n\n  > Unexpected token ','\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\nSyntaxError: The following error originated from your application code, not from Cypress.\n\n  > Unexpected token ','\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://www.google.com/__cypress/runner/cypress_runner.js:3456:19)\n    at Promise._then (https://www.google.com/__cypress/runner/cypress_runner.js:1209:17)\n    at Promise._passThrough (https://www.google.com/__cypress/runner/cypress_runner.js:4080:17)\n    at Promise.lastly.Promise.finally (https://www.google.com/__cypress/runner/cypress_runner.js:4089:17)\n    at Object.onRunnableRun (https://www.google.com/__cypress/runner/cypress_runner.js:162647:53)\n    at $Cypress.action (https://www.google.com/__cypress/runner/cypress_runner.js:41540:28)\n    at Runnable.run (https://www.google.com/__cypress/runner/cypress_runner.js:145229:13)\n    at next (https://www.google.com/__cypress/runner/cypress_runner.js:155014:10)\n    at https://www.google.com/__cypress/runner/cypress_runner.js:155058:5\n    at timeslice (https://www.google.com/__cypress/runner/cypress_runner.js:145569:27)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 22,
+            "name": "filter result by date from \"Past 24 hours\"",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 23,
+            "name": "there should be results from the \"Past 24 hours\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      }
+    ]
+  }
+]
