@@ -2,15 +2,15 @@ import { search } from "../../support/pageObjects/search";
 
 const searchCommand = new search();
 
-When(/type (.*) into the search bar/, (phrase) => {
-  searchCommand.type(phrase);
+When(/type (.*) into the search bar in (.*)/, (phrase, browse) => {
+  searchCommand.type(phrase, browse);
 });
 
-When("press Enter", () => {
-  searchCommand.clickEnter();
+When(/press Enter in (.*)/, (browse) => {
+  searchCommand.clickEnter(browse);
 });
 
-Then(/there should be some results of search that are relevant to (.*)/, (phrase) => {
+Then(/there should be some search results that are relevant to (.*)/, (phrase) => {
   searchCommand.results(phrase);
 });
 

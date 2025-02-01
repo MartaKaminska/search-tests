@@ -20,40 +20,40 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "I navigate to \"www.google.com\"",
+            "name": "navigate to \"www.google.com\"",
             "result": {
               "status": "passed",
-              "duration": 2543000000
+              "duration": 1981000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 6,
-            "name": "reject cookie policy",
+            "name": "reject cookie policy for google",
             "result": {
               "status": "passed",
-              "duration": 212000000
+              "duration": 178000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 9,
-            "name": "type prowly into the search bar",
+            "name": "type prowly into the search bar in google",
             "result": {
               "status": "passed",
-              "duration": 565000000
+              "duration": 475000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 10,
-            "name": "press Enter",
+            "name": "press Enter in google",
             "result": {
               "status": "failed",
-              "duration": 1480000000,
+              "duration": 1384000000,
               "error_message": "SyntaxError: The following error originated from your application code, not from Cypress.\n\n  > Unexpected token ','\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\nSyntaxError: The following error originated from your application code, not from Cypress.\n\n  > Unexpected token ','\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://www.google.com/__cypress/runner/cypress_runner.js:3456:19)\n    at Promise._then (https://www.google.com/__cypress/runner/cypress_runner.js:1209:17)\n    at Promise._passThrough (https://www.google.com/__cypress/runner/cypress_runner.js:4080:17)\n    at Promise.lastly.Promise.finally (https://www.google.com/__cypress/runner/cypress_runner.js:4089:17)\n    at Object.onRunnableRun (https://www.google.com/__cypress/runner/cypress_runner.js:162647:53)\n    at $Cypress.action (https://www.google.com/__cypress/runner/cypress_runner.js:41540:28)\n    at Runnable.run (https://www.google.com/__cypress/runner/cypress_runner.js:145229:13)\n    at next (https://www.google.com/__cypress/runner/cypress_runner.js:155014:10)\n    at https://www.google.com/__cypress/runner/cypress_runner.js:155058:5\n    at timeslice (https://www.google.com/__cypress/runner/cypress_runner.js:145569:27)"
             }
           },
@@ -98,39 +98,40 @@
             "arguments": [],
             "keyword": "Given ",
             "line": 5,
-            "name": "I navigate to \"www.google.com\"",
+            "name": "navigate to \"www.google.com\"",
             "result": {
               "status": "passed",
-              "duration": 1489000000
+              "duration": 1932000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 6,
-            "name": "reject cookie policy",
+            "name": "reject cookie policy for google",
             "result": {
               "status": "passed",
-              "duration": 198000000
+              "duration": 221000000
             }
           },
           {
             "arguments": [],
             "keyword": "When ",
             "line": 20,
-            "name": "type prowly into the search bar",
+            "name": "type prowly into the search bar in google",
             "result": {
               "status": "passed",
-              "duration": 374000000
+              "duration": 539000000
             }
           },
           {
             "arguments": [],
             "keyword": "And ",
             "line": 21,
-            "name": "press Enter",
+            "name": "press Enter in google",
             "result": {
               "status": "failed",
+              "duration": 1000000,
               "error_message": "SyntaxError: The following error originated from your application code, not from Cypress.\n\n  > Unexpected token ','\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\nSyntaxError: The following error originated from your application code, not from Cypress.\n\n  > Unexpected token ','\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://www.google.com/__cypress/runner/cypress_runner.js:3456:19)\n    at Promise._then (https://www.google.com/__cypress/runner/cypress_runner.js:1209:17)\n    at Promise._passThrough (https://www.google.com/__cypress/runner/cypress_runner.js:4080:17)\n    at Promise.lastly.Promise.finally (https://www.google.com/__cypress/runner/cypress_runner.js:4089:17)\n    at Object.onRunnableRun (https://www.google.com/__cypress/runner/cypress_runner.js:162647:53)\n    at $Cypress.action (https://www.google.com/__cypress/runner/cypress_runner.js:41540:28)\n    at Runnable.run (https://www.google.com/__cypress/runner/cypress_runner.js:145229:13)\n    at next (https://www.google.com/__cypress/runner/cypress_runner.js:155014:10)\n    at https://www.google.com/__cypress/runner/cypress_runner.js:155058:5\n    at timeslice (https://www.google.com/__cypress/runner/cypress_runner.js:145569:27)"
             }
           },
@@ -148,6 +149,74 @@
             "keyword": "Then ",
             "line": 23,
             "name": "there should be results from the \"Past 24 hours\"",
+            "result": {
+              "status": "skipped"
+            }
+          }
+        ]
+      },
+      {
+        "id": "search-in-google-browse;search-for-\"phrase\"-with-a-custom-date-filter",
+        "keyword": "Scenario",
+        "line": 37,
+        "name": "Search for \"phrase\" with a custom date filter",
+        "tags": [],
+        "type": "scenario",
+        "steps": [
+          {
+            "arguments": [],
+            "keyword": "Given ",
+            "line": 5,
+            "name": "navigate to \"www.google.com\"",
+            "result": {
+              "status": "passed",
+              "duration": 1974000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 6,
+            "name": "reject cookie policy for google",
+            "result": {
+              "status": "passed",
+              "duration": 148000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "When ",
+            "line": 30,
+            "name": "type prowly into the search bar in google",
+            "result": {
+              "status": "passed",
+              "duration": 490000000
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 31,
+            "name": "press Enter in google",
+            "result": {
+              "status": "failed",
+              "error_message": "SyntaxError: The following error originated from your application code, not from Cypress.\n\n  > Unexpected token ','\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\nSyntaxError: The following error originated from your application code, not from Cypress.\n\n  > Unexpected token ','\n\nWhen Cypress detects uncaught errors originating from your application it will automatically fail the current test.\n\nThis behavior is configurable, and you can choose to turn this off by listening to the `uncaught:exception` event.\nFrom previous event:\n    at Promise.longStackTracesCaptureStackTrace [as _captureStackTrace] (https://www.google.com/__cypress/runner/cypress_runner.js:3456:19)\n    at Promise._then (https://www.google.com/__cypress/runner/cypress_runner.js:1209:17)\n    at Promise._passThrough (https://www.google.com/__cypress/runner/cypress_runner.js:4080:17)\n    at Promise.lastly.Promise.finally (https://www.google.com/__cypress/runner/cypress_runner.js:4089:17)\n    at Object.onRunnableRun (https://www.google.com/__cypress/runner/cypress_runner.js:162647:53)\n    at $Cypress.action (https://www.google.com/__cypress/runner/cypress_runner.js:41540:28)\n    at Runnable.run (https://www.google.com/__cypress/runner/cypress_runner.js:145229:13)\n    at next (https://www.google.com/__cypress/runner/cypress_runner.js:155014:10)\n    at https://www.google.com/__cypress/runner/cypress_runner.js:155058:5\n    at timeslice (https://www.google.com/__cypress/runner/cypress_runner.js:145569:27)"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "And ",
+            "line": 32,
+            "name": "filter result by date from <from date> to <to date>",
+            "result": {
+              "status": "skipped"
+            }
+          },
+          {
+            "arguments": [],
+            "keyword": "Then ",
+            "line": 33,
+            "name": "there should be 16900 results from <from date> to <to date>",
             "result": {
               "status": "skipped"
             }

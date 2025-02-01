@@ -1,21 +1,28 @@
 export class search {
-  searchField = 'textarea[id="APjFqb"]';
+  searchFieldGoogle = 'textarea[id="APjFqb"]';
+  searchFieldBing = 'textarea[id="sb_form_q"]';
   results = "#search > div > div > div";
   sponsored = "#taw";
   infoPanel = "#kp-wp-tab-overview";
 
-  type(phrase) {
-    cy.get(this.searchField).type(phrase);
+  type(phrase, browse) {
+    const selector =
+      browse === "Google" ? this.searchFieldGoogle : this.searchFieldBing;
+    cy.get(selector).type(phrase);
   }
 
-  clickEnter() {
-    cy.get(this.searchField).type("{enter}");
+  clickEnter(browse) {
+    const selector =
+      browse === "Google" ? this.searchFieldGoogle : this.searchFieldBing;
+    cy.get(selector).type("{enter}");
   }
 
   results(phrase) {
-    cy.get(this.results).children("div").each(($ele, index) => {
-        cy.wrap($ele).should("contain", phrase)
-    })
+    cy.get(this.results)
+      .children("div")
+      .each(($ele, index) => {
+        cy.wrap($ele).should("contain", phrase);
+      });
   }
 
   sponsored(phrase) {

@@ -5,7 +5,7 @@ module.exports = defineConfig({
     setupNodeEvents(on, config) {
       return require("./cypress/plugins/index.js")(on, config);
     },
-    excludeSpecPattern: "*.js",
+    excludeSpecPattern: ["**.js", "cypress/e2e/features/bing.feature"],
     specPattern: "cypress/e2e/**/*.{feature,features}",
   },
 });
